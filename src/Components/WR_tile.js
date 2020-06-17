@@ -3,37 +3,97 @@ import '../App.css';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-function WR_tile() {
-  return (
-    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-      <div className="card">
-        <p>Predicted Approximate Value:</p>
-        <div className="container">
-          <h4><b>14</b></h4>
-          <Form>
-            <Form.Group>
-                <Form.Label>Receptions</Form.Label>
-                <Form.Control type="number" step=".01" placeholder="Enter receptions" />
-            </Form.Group>
+export class WR_tile extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            receptions: 0,
+            vertical: 0,
+            weight: 0,
+            approximateValue: 0,
+            intercept: -6.198266,
+            recCoeff: 0.058225,
+            verticalCoeff: 0.059266,
+            weightCoeff: 0.019352,
+        };
 
-            <Form.Group>
-                <Form.Label>Vertical</Form.Label>
-                <Form.Control type="number" step=".01" placeholder="Enter vertical" />
-            </Form.Group>
-            
-            <Form.Group>
-                <Form.Label>Weight</Form.Label>
-                <Form.Control type="number" step=".01" placeholder="Enter weight" />
-            </Form.Group>
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-            <Button variant="primary" type="submit">
-                Submit
-            </Button>
-          </Form>
-        </div>
-      </div>
-    </div>
-  );
+    handleChange(e) {
+        this.setState({ [e.target.name]: e.target.value });
+    }
+
+    handleSubmit(e) {
+        //Calculates AV based on input
+        let av = 
+            this.state.intercept +
+            (this.state.recCoeff * parseInt(this.state.receptions)) + 
+            (this.state.weightCoeff * parseInt(this.state.weight)) + 
+            (this.state.verticalCoeff * parseInt(this.state.vertical));
+
+        //Rounds AV to nearest integer
+        av = Math.round(av);
+
+        //Sets updated AV value
+        this.setState({
+            approximateValue: av
+        });
+        e.preventDefault();
+    }
+
+    render() {
+        return (
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
+                <div className="card">
+                    <p>Predicted Approximate Value:</p>
+                    <div className="container">
+                        <h2><b>{this.state.approximateValue}</b></h2>
+                        <Form>
+                            <Form.Group>
+                                <Form.Label>Receptions</Form.Label>
+                                <Form.Control 
+                                    type="number" 
+                                    step=".01" 
+                                    name='receptions' 
+                                    placeholder="Enter receptions"
+                                    value={this.state.receptions}
+									onChange={e => this.handleChange(e)} 
+                                />
+                            </Form.Group>
+
+                            <Form.Group>
+                                <Form.Label>Vertical</Form.Label>
+                                <Form.Control 
+                                    type="number" 
+                                    step=".01" 
+                                    name='vertical' 
+                                    placeholder="Enter vertical"
+                                    value={this.state.vertical}
+									onChange={e => this.handleChange(e)}
+                                />
+                            </Form.Group>
+                            
+                            <Form.Group>
+                                <Form.Label>Weight</Form.Label>
+                                <Form.Control 
+                                    type="number" 
+                                    step=".01" 
+                                    name='weight' 
+                                    placeholder="Enter weight in pounds"
+                                    value={this.state.weight}
+									onChange={e => this.handleChange(e)} 
+                                />
+                            </Form.Group>
+
+                            <Button variant="primary" onClick={this.handleSubmit}>
+                                Submit
+                            </Button>
+                        </Form>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
-
-export default WR_tile;
