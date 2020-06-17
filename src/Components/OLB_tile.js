@@ -46,55 +46,58 @@ export class OLB_tile extends React.Component {
 
     render() {
         return (
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-                <div className="card">
-                    <p>Predicted Approximate Value:</p>
-                    <div className="container">
-                        <h2><b>{this.state.approximateValue}</b></h2>
-                        <Form>
-                            <Form.Group>
-                                <Form.Label>Tackles For Loss</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='tacklesForLoss' 
-                                    placeholder="Enter tackles for loss"
-                                    value={this.state.tacklesForLoss}
-									onChange={e => this.handleChange(e)} 
-                                />
-                            </Form.Group>
+            <span>
+                <h1 className="center">Outside Linebacker</h1>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '75vh'}}>
+                    <div className="card">
+                        <p>Predicted Approximate Value:</p>
+                        <div className="container">
+                            <h2><b>{this.state.approximateValue}</b></h2>
+                            <Form>
+                                <Form.Group>
+                                    <Form.Label>Tackles For Loss</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='tacklesForLoss' 
+                                        placeholder="Enter tackles for loss"
+                                        value={this.state.tacklesForLoss}
+                                        onChange={e => this.handleChange(e)} 
+                                    />
+                                </Form.Group>
 
-                            <Form.Group>
-                                <Form.Label>Pass Deflections</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='passDeflections' 
-                                    placeholder="Enter pass deflections"
-                                    value={this.state.passDeflections}
-									onChange={e => this.handleChange(e)}
-                                />
-                            </Form.Group>
-                            
-                            <Form.Group>
-                                <Form.Label>Solo Tackles</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='soloTackles' 
-                                    placeholder="Enter solo tackles"
-                                    value={this.state.soloTackles}
-									onChange={e => this.handleChange(e)} 
-                                />
-                            </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Pass Deflections</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='passDeflections' 
+                                        placeholder="Enter pass deflections"
+                                        value={this.state.passDeflections}
+                                        onChange={e => this.handleChange(e)}
+                                    />
+                                </Form.Group>
+                                
+                                <Form.Group>
+                                    <Form.Label>Solo Tackles</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='soloTackles' 
+                                        placeholder="Enter solo tackles"
+                                        value={this.state.soloTackles}
+                                        onChange={e => this.handleChange(e)} 
+                                    />
+                                </Form.Group>
 
-                            <Button variant="primary" onClick={this.handleSubmit}>
-                                Submit
-                            </Button>
-                        </Form>
+                                <Button variant="primary" onClick={this.handleSubmit}>
+                                    Submit
+                                </Button>
+                            </Form>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </span>
         );
     }
 }

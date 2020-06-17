@@ -22,3 +22,7 @@
 .container {
   padding: 5px 16px 25px 16px;
 }
+
+.center {
+  text-align: center;
+}

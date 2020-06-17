@@ -45,55 +45,58 @@ export class QB_tile extends React.Component {
 
     render() {
         return (
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-                <div className="card">
-                    <p>Predicted Approximate Value:</p>
-                    <div className="container">
-                        <h2><b>{this.state.approximateValue}</b></h2>
-                        <Form>
-                            <Form.Group>
-                                <Form.Label>Passing Yards</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='passingYards' 
-                                    placeholder="Enter passing yards"
-                                    value={this.state.passingYards}
-									onChange={e => this.handleChange(e)} 
-                                />
-                            </Form.Group>
+            <span>
+                <h1 className="center">Quarterback</h1>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '75vh'}}>
+                    <div className="card">
+                        <p>Predicted Approximate Value:</p>
+                        <div className="container">
+                            <h2><b>{this.state.approximateValue}</b></h2>
+                            <Form>
+                                <Form.Group>
+                                    <Form.Label>Passing Yards</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='passingYards' 
+                                        placeholder="Enter passing yards"
+                                        value={this.state.passingYards}
+                                        onChange={e => this.handleChange(e)} 
+                                    />
+                                </Form.Group>
 
-                            <Form.Group>
-                                <Form.Label>Adjusted Pass Yards Per Attempt</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='adjustedPassYards' 
-                                    placeholder="Enter adjusted pass yards per attempt"
-                                    value={this.state.adjustedPassYards}
-									onChange={e => this.handleChange(e)}
-                                />
-                            </Form.Group>
-                            
-                            <Form.Group>
-                                <Form.Label>Pass Yards Per Attempt</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='passYardsPerAttempt' 
-                                    placeholder="Enter pass yards per attempt"
-                                    value={this.state.passYardsPerAttempt}
-									onChange={e => this.handleChange(e)} 
-                                />
-                            </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Adjusted Pass Yards Per Attempt</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='adjustedPassYards' 
+                                        placeholder="Enter adjusted pass yards per attempt"
+                                        value={this.state.adjustedPassYards}
+                                        onChange={e => this.handleChange(e)}
+                                    />
+                                </Form.Group>
+                                
+                                <Form.Group>
+                                    <Form.Label>Pass Yards Per Attempt</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='passYardsPerAttempt' 
+                                        placeholder="Enter pass yards per attempt"
+                                        value={this.state.passYardsPerAttempt}
+                                        onChange={e => this.handleChange(e)} 
+                                    />
+                                </Form.Group>
 
-                            <Button variant="primary" onClick={this.handleSubmit}>
-                                Submit
-                            </Button>
-                        </Form>
+                                <Button variant="primary" onClick={this.handleSubmit}>
+                                    Submit
+                                </Button>
+                            </Form>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </span>
         );
     }
 }

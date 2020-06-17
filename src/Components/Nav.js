@@ -8,7 +8,7 @@ function Nav() {
   return (
     <span>
       <ReactBootstrap.Navbar bg="light" expand="lg">
-      <ReactBootstrap.Navbar.Brand href="#home">AV Calculator</ReactBootstrap.Navbar.Brand>
+      <ReactBootstrap.Navbar.Brand href="/">AV Calculator</ReactBootstrap.Navbar.Brand>
       <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
       <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
           <ReactBootstrap.Nav className="mr-auto">

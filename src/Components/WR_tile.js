@@ -45,55 +45,58 @@ export class WR_tile extends React.Component {
 
     render() {
         return (
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-                <div className="card">
-                    <p>Predicted Approximate Value:</p>
-                    <div className="container">
-                        <h2><b>{this.state.approximateValue}</b></h2>
-                        <Form>
-                            <Form.Group>
-                                <Form.Label>Receptions</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='receptions' 
-                                    placeholder="Enter receptions"
-                                    value={this.state.receptions}
-									onChange={e => this.handleChange(e)} 
-                                />
-                            </Form.Group>
+            <span>
+                <h1 className="center">Wide Receiver</h1>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '75vh'}}>
+                    <div className="card">
+                        <p>Predicted Approximate Value:</p>
+                        <div className="container">
+                            <h2><b>{this.state.approximateValue}</b></h2>
+                            <Form>
+                                <Form.Group>
+                                    <Form.Label>Receptions</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='receptions' 
+                                        placeholder="Enter receptions"
+                                        value={this.state.receptions}
+                                        onChange={e => this.handleChange(e)} 
+                                    />
+                                </Form.Group>
 
-                            <Form.Group>
-                                <Form.Label>Vertical</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='vertical' 
-                                    placeholder="Enter vertical"
-                                    value={this.state.vertical}
-									onChange={e => this.handleChange(e)}
-                                />
-                            </Form.Group>
-                            
-                            <Form.Group>
-                                <Form.Label>Weight</Form.Label>
-                                <Form.Control 
-                                    type="number" 
-                                    step=".01" 
-                                    name='weight' 
-                                    placeholder="Enter weight in pounds"
-                                    value={this.state.weight}
-									onChange={e => this.handleChange(e)} 
-                                />
-                            </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Vertical</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='vertical' 
+                                        placeholder="Enter vertical"
+                                        value={this.state.vertical}
+                                        onChange={e => this.handleChange(e)}
+                                    />
+                                </Form.Group>
+                                
+                                <Form.Group>
+                                    <Form.Label>Weight</Form.Label>
+                                    <Form.Control 
+                                        type="number" 
+                                        step=".01" 
+                                        name='weight' 
+                                        placeholder="Enter weight in pounds"
+                                        value={this.state.weight}
+                                        onChange={e => this.handleChange(e)} 
+                                    />
+                                </Form.Group>
 
-                            <Button variant="primary" onClick={this.handleSubmit}>
-                                Submit
-                            </Button>
-                        </Form>
+                                <Button variant="primary" onClick={this.handleSubmit}>
+                                    Submit
+                                </Button>
+                            </Form>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </span>
         );
     }
 }
