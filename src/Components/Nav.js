@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 function Nav() {
   return (
     <span>
-      <ReactBootstrap.Navbar className="color-nav" expand="lg">
+      <ReactBootstrap.Navbar className="color-nav" variant="dark" expand="lg">
       <ReactBootstrap.Navbar.Brand className="navbar-brand" href="/">AV Calculator</ReactBootstrap.Navbar.Brand>
       <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
       <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
