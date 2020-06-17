@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
+import './Nav.css'
 import * as ReactBootstrap from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
     <span>
-      <ReactBootstrap.Navbar bg="light" expand="lg">
-      <ReactBootstrap.Navbar.Brand href="/">AV Calculator</ReactBootstrap.Navbar.Brand>
+      <ReactBootstrap.Navbar className="color-nav" expand="lg">
+      <ReactBootstrap.Navbar.Brand className="navbar-brand" href="/">AV Calculator</ReactBootstrap.Navbar.Brand>
       <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
       <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
           <ReactBootstrap.Nav className="mr-auto">
