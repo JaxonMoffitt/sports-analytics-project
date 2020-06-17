@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../logo.svg';
 import '../App.css';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
@@ -12,19 +11,19 @@ function WR_tile() {
         <div className="container">
           <h4><b>14</b></h4>
           <Form>
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group>
                 <Form.Label>Receptions</Form.Label>
-                <Form.Control type="number" placeholder="Enter receptions" />
+                <Form.Control type="number" step=".01" placeholder="Enter receptions" />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group>
                 <Form.Label>Vertical</Form.Label>
-                <Form.Control type="number" placeholder="Enter vertical" />
+                <Form.Control type="number" step=".01" placeholder="Enter vertical" />
             </Form.Group>
             
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group>
                 <Form.Label>Weight</Form.Label>
-                <Form.Control type="number" placeholder="Enter weight" />
+                <Form.Control type="number" step=".01" placeholder="Enter weight" />
             </Form.Group>
 
             <Button variant="primary" type="submit">

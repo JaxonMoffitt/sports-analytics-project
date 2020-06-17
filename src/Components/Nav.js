@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import * as ReactBootstrap from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -13,8 +14,8 @@ function Nav() {
           <ReactBootstrap.Nav className="mr-auto">
           <ReactBootstrap.Nav.Link href="/">About</ReactBootstrap.Nav.Link>
           <ReactBootstrap.NavDropdown title="Calculator" id="basic-nav-dropdown">
-              <ReactBootstrap.NavDropdown.Item href="/offensive-linebacker">Offensive Linebacker</ReactBootstrap.NavDropdown.Item>
-              <ReactBootstrap.NavDropdown.Item href="/quarterback">Quarter Back</ReactBootstrap.NavDropdown.Item>
+              <ReactBootstrap.NavDropdown.Item href="/outside-linebacker">Outside Linebacker</ReactBootstrap.NavDropdown.Item>
+              <ReactBootstrap.NavDropdown.Item href="/quarterback">Quarterback</ReactBootstrap.NavDropdown.Item>
               <ReactBootstrap.NavDropdown.Item href="/wide-receiver">Wide Receiver</ReactBootstrap.NavDropdown.Item>
           </ReactBootstrap.NavDropdown>
           </ReactBootstrap.Nav>
