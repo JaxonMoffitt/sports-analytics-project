@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Nav />
-      <Route path='/about' component={About} />
+      <Route exact path='/' component={About} />
       <Route path='/offensive-linebacker' component={OLB_tile} />
       <Route path='/quarterback' component={QB_tile} />
       <Route path='/wide-receiver' component={WR_tile} />
