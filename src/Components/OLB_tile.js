@@ -35,8 +35,8 @@ export class OLB_tile extends React.Component {
             (this.state.passDeflectionsCoeff * parseInt(this.state.passDeflections));
 
         //Rounds AV to nearest integer
-        av = Math.round(av);
-
+        av = av.toFixed(2);
+        
         //Sets updated AV value
         this.setState({
             approximateValue: av

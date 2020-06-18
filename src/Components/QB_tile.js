@@ -34,7 +34,7 @@ export class QB_tile extends React.Component {
             (this.state.passYACoeff * parseInt(this.state.passYardsPerAttempt));
 
         //Rounds AV to nearest integer
-        av = Math.round(av);
+        av = av.toFixed(2);
 
         //Sets updated AV value
         this.setState({

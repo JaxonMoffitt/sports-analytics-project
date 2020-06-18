@@ -34,7 +34,7 @@ export class WR_tile extends React.Component {
             (this.state.verticalCoeff * parseInt(this.state.vertical));
 
         //Rounds AV to nearest integer
-        av = Math.round(av);
+        av = av.toFixed(2);
 
         //Sets updated AV value
         this.setState({
