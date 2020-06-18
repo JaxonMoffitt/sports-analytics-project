@@ -136,6 +136,10 @@ function About() {
         </div>
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
+            <img src={qbCollin} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
+        </div>
+
+        <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
             -	Metrics: .763 adjusted R-squared, 5.66 mean squared error            
             </p>
@@ -177,6 +181,10 @@ function About() {
             <p className="body-text">
             -	Predictor Variables: Reception Yards (most significant), Receptions, Forty-Yd Dash
             </p>
+        </div>
+
+        <div style={{display: 'flex',  justifyContent:'center'}} >
+            <img src={wrCollin} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
         </div>
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
@@ -227,6 +235,10 @@ function About() {
         <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
             -	Predictor Variables: tackles for loss (most significant), pass deflections, and solo tackles            </p>
+        </div>
+
+        <div style={{display: 'flex',  justifyContent:'center'}} >
+            <img src={olbCollin} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
         </div>
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
