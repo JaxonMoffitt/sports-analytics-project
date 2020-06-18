@@ -1,18 +1,29 @@
 import React from 'react';
-import football_icon from '../photos/football_icon.png';
-import '../App.css';
+import headerImage from '../photos/tackle.jpg';
+import './About.css'
 
 function About() {
   return (
-    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}} >
-      <div className="card" style={{ alignItems:'center', padding:'10px' }} >
-        <img src={football_icon} className="App-logo" alt="logo" width="10%" height="10%" />
-        <div className="container">
-          <h4><b>About Page</b></h4>
-          <p>Lorem ipsum etc</p>
+    <span>
+        <div style={{display: 'flex',  justifyContent:'center'}} >
+            <h1>Navigating the NFL Draft Through Data Science</h1>
         </div>
-      </div>
-    </div>
+        <div style={{display: 'flex', justifyContent:'center'}} >
+            <h4>How to calculate a college player's future value in the NFL</h4>
+        </div>
+        <div style={{display: 'flex', justifyContent:'center'}} >
+            <p className="line"></p>
+        </div>
+        <div style={{display: 'flex', justifyContent:'center', paddingBottom:'15px'}} >
+            <h6>By: Scott Gill | Jaxon Moffitt | Ryan Skalla</h6>
+        </div>
+        <div style={{display: 'flex',  justifyContent:'center'}} >
+            <img src={headerImage} className="App-logo align" alt="logo" width='100%' height='100%'/>
+        </div>
+        <div style={{display: 'flex',  justifyContent:'center', height: '500px'}} >
+            <p></p>
+        </div>
+    </span>
   );
 }
 
