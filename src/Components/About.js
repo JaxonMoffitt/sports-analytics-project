@@ -20,7 +20,7 @@ function About() {
         </div>
 
         <div style={{display: 'flex', justifyContent:'center'}} >
-            <h4>Calculating a college player's future value in the NFL</h4>
+            <h4>Is it possible to calculate a college player's future value in the NFL?</h4>
         </div>
 
         <div style={{display: 'flex', justifyContent:'center'}} >
