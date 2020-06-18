@@ -28,7 +28,7 @@ function About() {
         </div>
 
         <div style={{display: 'flex', justifyContent:'center', paddingBottom:'15px'}} >
-            <h6>By: Scott Gill | Jaxon Moffitt | Ryan Skalla</h6>
+            <h6>Scott Gill | Jaxon Moffitt | Ryan Skalla</h6>
         </div>
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
