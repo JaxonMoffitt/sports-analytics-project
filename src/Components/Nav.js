@@ -9,7 +9,7 @@ function Nav() {
   return (
     <span>
       <ReactBootstrap.Navbar className="color-nav" variant="dark" expand="lg">
-      <ReactBootstrap.Navbar.Brand className="navbar-brand" href="/">AV Calculator</ReactBootstrap.Navbar.Brand>
+      <ReactBootstrap.Navbar.Brand className="navbar-brand" href="/">NFL Draftee Future Value Calculator</ReactBootstrap.Navbar.Brand>
       <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
       <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
           <ReactBootstrap.Nav className="mr-auto">
