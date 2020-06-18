@@ -84,7 +84,7 @@ function About() {
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
-            The distributions for each of the position groups’ career average value were all extremely right skewed. This makes sense, because according to the NFL Players’ Association the average career length of an NFL player is 3.3 years. This meant that most players fizzle out of the league before being able to greatly contribute to a team and record a higher average value for their career. With that being said, we decided to branch from that metric and create our own: Average Value per games played. This allowed us to meet more of our assumptions for linear regression and not perform as many transformations upon the data. To the right are the associated distributions for each position group:            </p>
+            The distributions for each of the position groups’ career average value were all extremely right skewed. This makes sense, because according to the NFL Players’ Association the average career length of an NFL player is 3.3 years. This meant that most players fizzle out of the league before being able to greatly contribute to a team and record a higher average value for their career. With that being said, we decided to branch from that metric and create our own: Average Value per games played. This allowed us to meet more of our assumptions for linear regression and not perform as many transformations upon the data. Below are the associated distributions for each position group:            </p>
         </div>
 
         {/* DISTRIBUTION IMAGES */}
@@ -299,7 +299,7 @@ function About() {
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
-            While we can’t guarantee 100% accuracy of our models, we are proud of our results and feel that they are valuable in the conversation about potential NFL draft picks, and that our analysis represents the beginning of the potential for much more in-depth analysis of what makes a “good draft pick”            </p>
+            While we can’t guarantee 100% accuracy of our models, we are proud of our results and feel that they are valuable in the conversation about potential NFL draft picks, and that our analysis represents the beginning of the potential for much more in-depth analysis of what makes a “good draft pick”.            </p>
         </div>
         
         <div style={{display: 'flex',  justifyContent:'center', height: '500px'}} >
