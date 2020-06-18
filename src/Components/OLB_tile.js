@@ -48,11 +48,14 @@ export class OLB_tile extends React.Component {
         return (
             <span>
                 <h1 className="center">Outside Linebacker</h1>
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '75vh'}}>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '60vh'}}>
                     <div className="card">
+                        <br />
                         <p>Predicted Approximate Value:</p>
                         <div className="container">
                             <h2><b>{this.state.approximateValue}</b></h2>
+                            <p>Per Game</p>
+                            <br />
                             <Form>
                                 <Form.Group>
                                     <Form.Label>Tackles For Loss</Form.Label>

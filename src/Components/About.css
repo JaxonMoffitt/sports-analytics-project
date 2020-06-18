@@ -1,6 +1,5 @@
 .App-logo {
-    width: 100%;
-    height: 75%;
+    height: 30em;
     object-fit: cover;
     pointer-events: none;
     border-radius: 20px;
@@ -33,13 +32,14 @@ h1 {
     overflow-wrap: normal;
     width: 60%;
     padding-top: 20px;
+    color: #293241;
 }
 
 h4, h6 {
     text-align: left;
     overflow-wrap: normal;
     width: 60%;
-    color: #7C7C7C;
+    color: #67626A;
 }
 
 .body-text {
@@ -54,13 +54,13 @@ h4, h6 {
     text-align: left;
     overflow-wrap: normal;
     width: 60%;
-    color: #2B303A;
+    color: #3D5A80;
     padding-top: 15px;
 }
 
 .line {
     content: " ";
-    border: 1px solid #D64933;
+    border: 1px solid #EE6C4D;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 20%;
