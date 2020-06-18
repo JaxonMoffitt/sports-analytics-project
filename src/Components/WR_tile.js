@@ -11,10 +11,10 @@ export class WR_tile extends React.Component {
             vertical: 0,
             weight: 0,
             approximateValue: 0,
-            intercept: -6.198266,
-            recCoeff: 0.058225,
-            verticalCoeff: 0.059266,
-            weightCoeff: 0.019352,
+            intercept: -53.283054,
+            fortyCoeff: 12.316933,
+            recAttCoeff: -0.059334,
+            recYdsCoeff: 0.011772,
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -29,9 +29,9 @@ export class WR_tile extends React.Component {
         //Calculates AV based on input
         let av = 
             this.state.intercept +
-            (this.state.recCoeff * parseInt(this.state.receptions)) + 
-            (this.state.weightCoeff * parseInt(this.state.weight)) + 
-            (this.state.verticalCoeff * parseInt(this.state.vertical));
+            (this.state.fortyCoeff * parseInt(this.state.forty)) + 
+            (this.state.recAttCoeff * parseInt(this.state.recAtt)) + 
+            (this.state.recYdsCoeff * parseInt(this.state.recYds));
 
         //Rounds AV to nearest integer
         av = av.toFixed(2);
@@ -57,37 +57,37 @@ export class WR_tile extends React.Component {
                             <br/>
                             <Form>
                                 <Form.Group>
-                                    <Form.Label>Receptions</Form.Label>
+                                    <Form.Label>Forty Yard Time</Form.Label>
                                     <Form.Control 
                                         type="number" 
                                         step=".01" 
-                                        name='receptions' 
-                                        placeholder="Enter receptions"
-                                        value={this.state.receptions}
+                                        name='forty' 
+                                        placeholder="Enter Forty Time"
+                                        value={this.state.forty}
                                         onChange={e => this.handleChange(e)} 
                                     />
                                 </Form.Group>
 
                                 <Form.Group>
-                                    <Form.Label>Vertical</Form.Label>
+                                    <Form.Label>Reception Attempts</Form.Label>
                                     <Form.Control 
                                         type="number" 
                                         step=".01" 
-                                        name='vertical' 
-                                        placeholder="Enter vertical"
-                                        value={this.state.vertical}
+                                        name='recAtt' 
+                                        placeholder="Enter Reception Attempts"
+                                        value={this.state.recAtt}
                                         onChange={e => this.handleChange(e)}
                                     />
                                 </Form.Group>
                                 
                                 <Form.Group>
-                                    <Form.Label>Weight</Form.Label>
+                                    <Form.Label>Receiving Yards</Form.Label>
                                     <Form.Control 
                                         type="number" 
                                         step=".01" 
                                         name='weight' 
-                                        placeholder="Enter weight in pounds"
-                                        value={this.state.weight}
+                                        placeholder="Enter Receiving Yards"
+                                        value={this.state.recYds}
                                         onChange={e => this.handleChange(e)} 
                                     />
                                 </Form.Group>
