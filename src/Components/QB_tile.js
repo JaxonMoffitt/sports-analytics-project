@@ -97,6 +97,10 @@ export class QB_tile extends React.Component {
                                 </Button>
                             </Form>
                         </div>
+                        <p>Intercept: {this.state.intercept}</p>
+                        <p>Passing Yds Coefficient: {this.state.passYdsCoeff}</p>
+                        <p>Adjusted Passing Yds per Attempt Coefficient: {this.state.passAYACoeff}</p>
+                        <p>Yds per Attempt Coefficient: {this.state.passYACoeff}</p>
                     </div>
                 </div>
             </span>

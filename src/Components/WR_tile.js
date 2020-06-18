@@ -7,9 +7,9 @@ export class WR_tile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            receptions: 0,
-            vertical: 0,
-            weight: 0,
+            forty: 0,
+            recAtt: 0,
+            recYds: 0,
             approximateValue: 0,
             intercept: -53.283054,
             fortyCoeff: 12.316933,
@@ -97,6 +97,10 @@ export class WR_tile extends React.Component {
                                 </Button>
                             </Form>
                         </div>
+                        <p>Intercept: {this.state.intercept}</p>
+                        <p>Forty Coefficient: {this.state.fortyCoeff}</p>
+                        <p>Reception Attempts Coefficient: {this.state.recAttCoeff}</p>
+                        <p>Receiving Yards Coefficient: {this.state.recYdsCoeff}</p>
                     </div>
                 </div>
             </span>

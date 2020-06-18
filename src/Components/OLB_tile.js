@@ -98,6 +98,10 @@ export class OLB_tile extends React.Component {
                                 </Button>
                             </Form>
                         </div>
+                        <p>Intercept: {this.state.intercept}</p>
+                        <p>Tackles for Loss Coefficient: {this.state.tackleCoeff}</p>
+                        <p>Pass Deflections Coefficient: {this.state.passDeflectionsCoeff}</p>
+                        <p>Solo Tackles Coefficient: {this.state.soloTacklesCoeff}</p>
                     </div>
                 </div>
             </span>

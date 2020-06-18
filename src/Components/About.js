@@ -165,8 +165,8 @@ function About() {
 
         {/* IMAGES */}
         <div style={{display: 'flex',  justifyContent:'center'}} >
-            <img src={weight} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
-            <img src={receptions} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
+            <img src={recYds} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
+            <img src={forty} className="inline-image-2 align" alt="logo" width='100%' height='50%'/>
         </div>
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
