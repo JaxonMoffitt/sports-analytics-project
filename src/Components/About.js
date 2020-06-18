@@ -175,13 +175,13 @@ function About() {
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
-            -	Predictor Variables: Receptions (most significant), weight, vertical
+            -	Predictor Variables: Reception Yards (most significant), Receptions, Forty-Yd Dash
             </p>
         </div>
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
-            -	Metrics: .769 adjusted R-squared, .77 mean squared error
+            -	Metrics: .59 adjusted R-squared
             </p>
         </div>
 
