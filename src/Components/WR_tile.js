@@ -47,7 +47,7 @@ export class WR_tile extends React.Component {
         return (
             <span>
                 <h1 className="center">Wide Receiver</h1>
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '60vh'}}>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '35em'}}>
                     <div className="card">
                         <br/>
                         <p>Predicted Approximate Value:</p>

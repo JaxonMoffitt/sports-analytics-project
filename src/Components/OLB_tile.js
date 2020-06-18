@@ -48,7 +48,7 @@ export class OLB_tile extends React.Component {
         return (
             <span>
                 <h1 className="center">Outside Linebacker</h1>
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '60vh'}}>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '35em'}}>
                     <div className="card">
                         <br />
                         <p>Predicted Approximate Value:</p>
