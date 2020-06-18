@@ -85,7 +85,7 @@ export class WR_tile extends React.Component {
                                     <Form.Control 
                                         type="number" 
                                         step=".01" 
-                                        name='weight' 
+                                        name='recYds' 
                                         placeholder="Enter Receiving Yards"
                                         value={this.state.recYds}
                                         onChange={e => this.handleChange(e)} 
