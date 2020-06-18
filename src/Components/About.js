@@ -287,8 +287,19 @@ function About() {
 
         <div style={{display: 'flex',  justifyContent:'center'}} >
             <p className="body-text">
-            Before beginning our analysis, we recognized there would be several limitations to overcome:            
+            We started this project with the ambitious goal of building a tool to help any given NFL team determine which player out of the draft pool would be the most beneficial to their team, according to their needs and strengths of the players. Given more time, we would have loved to accomplish that goal. While the scope of the project changed throughout our research, we feel our analysis makes significant headway towards that original vision. We were able to identify positive correlations between college and combine statistics and their future performance in the NFL, and we were able to identify which of those statistics are the most important for 3 key position groups.             
             </p>
+        </div>
+        
+        <div style={{display: 'flex',  justifyContent:'center'}} >
+            <p className="body-text">
+            Using our analysis of the data, we were able to put together a calculator that will predict a Quarterback, Wide Receiver or Outside Linebacker’s success in the NFL before they play a single game. This can be used by general managers and coaches to compare two potential prospects in a new way, and to identify possible factors they might not have considered as heavily. It can also give fans the chance to see how their teams pick will perform in the future. Click on the links in the navbar above to test the calculator!
+            </p>
+        </div>
+
+        <div style={{display: 'flex',  justifyContent:'center'}} >
+            <p className="body-text">
+            While we can’t guarantee 100% accuracy of our models, we are proud of our results and feel that they are valuable in the conversation about potential NFL draft picks, and that our analysis represents the beginning of the potential for much more in-depth analysis of what makes a “good draft pick”            </p>
         </div>
         
         <div style={{display: 'flex',  justifyContent:'center', height: '500px'}} >
