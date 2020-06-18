@@ -42,6 +42,22 @@ h4, h6 {
     color: #7C7C7C;
 }
 
+.body-text {
+    text-align: left;
+    overflow-wrap: normal;
+    width: 60%;
+    padding-top: 15px;
+    font-size: medium;
+}
+
+.header-text {
+    text-align: left;
+    overflow-wrap: normal;
+    width: 60%;
+    color: #7C7C7C;
+    padding-top: 15px;
+}
+
 .line {
     content: " ";
     border: 1px solid #D64933;
