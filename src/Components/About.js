@@ -9,6 +9,9 @@ import defl from '../photos/av-pass-defl.png';
 import olbDist from '../photos/dist-olb.png';
 import qbDist from '../photos/dist-qb.png';
 import wrDist from '../photos/dist-wr.png';
+import olbCollin from '../photos/olbCollin.png';
+import qbCollin from '../photos/qbCollin.png';
+import wrCollin from '../photos/wrCollin.png';
 
 import './About.css'
 
