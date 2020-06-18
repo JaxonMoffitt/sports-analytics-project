@@ -15,8 +15,8 @@ function Nav() {
           <ReactBootstrap.Nav className="mr-auto">
           <ReactBootstrap.Nav.Link href="/">About</ReactBootstrap.Nav.Link>
           <ReactBootstrap.NavDropdown title="Calculator" id="basic-nav-dropdown">
+            <ReactBootstrap.NavDropdown.Item href="/quarterback">Quarterback</ReactBootstrap.NavDropdown.Item>
               <ReactBootstrap.NavDropdown.Item href="/outside-linebacker">Outside Linebacker</ReactBootstrap.NavDropdown.Item>
-              <ReactBootstrap.NavDropdown.Item href="/quarterback">Quarterback</ReactBootstrap.NavDropdown.Item>
               <ReactBootstrap.NavDropdown.Item href="/wide-receiver">Wide Receiver</ReactBootstrap.NavDropdown.Item>
           </ReactBootstrap.NavDropdown>
           </ReactBootstrap.Nav>
