@@ -46,15 +46,15 @@ h4, h6 {
     text-align: left;
     overflow-wrap: normal;
     width: 60%;
-    padding-top: 15px;
-    font-size: medium;
+    padding-top: 5px;
+    font-size: large;
 }
 
 .header-text {
     text-align: left;
     overflow-wrap: normal;
     width: 60%;
-    color: #7C7C7C;
+    color: #2B303A;
     padding-top: 15px;
 }
 
